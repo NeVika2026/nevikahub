@@ -193,8 +193,10 @@ a {
 .expert-card,
 .focus-card,
 .timeline-card,
+.route-card,
 .mode-card,
 .risk-panel,
+.preview-card,
 .gallery-card,
 .quote-card {
   border: 1px solid var(--line);
@@ -258,6 +260,68 @@ h1 {
   flex-wrap: wrap;
   gap: 14px;
   margin-top: 32px;
+}
+
+.section--route {
+  padding-top: 10px;
+}
+
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.route-card {
+  padding: 28px;
+  border-radius: var(--radius-lg);
+}
+
+.route-card span {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.route-card h3,
+.preview-card figcaption,
+.focus-card h3,
+.timeline-card h3 {
+  margin-top: 18px;
+}
+
+.route-card p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.preview-card {
+  margin: 0;
+  padding: 18px;
+  border-radius: var(--radius-lg);
+}
+
+.preview-card img {
+  border-radius: 18px;
+  border: 1px solid rgba(32, 42, 55, 0.08);
+  box-shadow: 0 14px 36px rgba(49, 39, 26, 0.12);
+}
+
+.preview-card figcaption {
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 .hero__stats {
@@ -514,6 +578,8 @@ h1 {
   .hero,
   .risk-layout,
   .focus-grid,
+  .route-grid,
+  .preview-grid,
   .timeline,
   .modes-grid,
   .gallery-grid,
@@ -570,6 +636,8 @@ h1 {
   .hero__copy,
   .focus-card,
   .timeline-card,
+  .route-card,
+  .preview-card,
   .mode-card,
   .risk-panel,
   .quote-card {
